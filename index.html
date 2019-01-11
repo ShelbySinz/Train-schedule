@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Firebase Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   
+    
+</head>
+<body>
+    <div class="container">
+
+        <br>
+    
+        <!-- Jumbotron Title -->
+        <div class="jumbotron">
+          <h1 class="text-center"> Train Scheduler</h1>
+          <h3 class="text-center">"Where The Train Never Stops!"</h3>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header" id ="head">
+                Current Train Schedule 
+              </div>
+              <h3 class = "text-center" id = "currentTime">Current Time:</h3>
+              <div class="card-body">
+                <table id = "table">
+                  <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>frequency(min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+
+                <tbody id = "tableBody">
+                  <tr></tr>
+
+                </tbody>
+                  
+                </table>
+                </div>
+                </div>
+                </div>
+              </div>           
+
+         <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header" id = "head">
+                  Add A Train
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="bidder-name">Train Name</label>
+                      <input class="form-control" id="train-name" type="text">
+                    </div>
+                    <div class="form-group row">
+                      <label for="bidder-price">Destination</label>
+                      <input class="form-control" id="where-to" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="bidder-price">First Train Time (HH:MM)</label>
+                        <input class="form-control" id="train-time" type="text">
+                      </div>
+                      <div class="form-group row">
+                        <label for="bidder-price">Frequency (min)</label>
+                        <input class="form-control" id="frequency-min" type="number">
+                      </div>
+                     
+                    <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+
+
+        </div>
+    
+
+
+       
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" integrity="sha256-1hjUhpc44NwiNg8OwMu2QzJXhD8kcj+sJA3aCQZoUjg=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/game.js"></script>
+  </body>
+</html>
